@@ -2,6 +2,6 @@ FROM python:3.10
 
 WORKDIR /app
 
-COPY . .
+ENV tmp_value="hello"
 
-CMD ["python", "main.py"]
+COPY . .
